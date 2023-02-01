@@ -1,0 +1,10 @@
+- name: Build and push Docker images
+      uses: docker/build-push-action@v1.0.1
+      with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          registry: cloud.canister.io/rob
+          repository: pipeline
+          tags: v1
+          # Set build context as current (root) directory
+          path: .
