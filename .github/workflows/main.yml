@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '13.10'
       - name: Publish to Github Packages Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: docker/build-push-action@v4
         with:
           registry: cloud.canister.io:5000/rob/pipeline
           name: pipeline
