@@ -17,8 +17,7 @@ jobs:
       - name: Publish to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          registry: https://cloud.canister.io/n/rob
-          name: pipeline
+          registry: cloud.canister.io:5000/rob/pipeline
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile
