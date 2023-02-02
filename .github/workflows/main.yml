@@ -18,7 +18,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
           name: kenessajr/react-with-actions/react-with-actions
-          registry: cloud.canister.io
+          registry: https://cloud.canister.io/n/rob/pipeline
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile
