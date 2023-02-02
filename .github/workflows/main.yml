@@ -22,7 +22,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile
-          repository: pipeline
           tags: latest
       - name: Deploy package to digitalocean
         uses: appleboy/ssh-action@master
